@@ -1,3 +1,5 @@
+# Конфигурационный файл для перенаправления всех запросов в index.php.
+
 <IfModule mod_rewrite.c>
     RewriteEngine on
     RewriteCond %{REQUEST_FILENAME} !-f

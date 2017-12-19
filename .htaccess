@@ -1,3 +1,5 @@
+# Конфигурационный файл для перенаправления в директорию webroot.
+
 <IfModule mod_rewrite.c>
     RewriteEngine on
     RewriteRule ^$ webroot/ [L]

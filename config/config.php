@@ -1,23 +1,27 @@
-<?php
+<?php // Конфигурационный файл.
 
+// Debug режим.
 Config::set('debug', true);
 
+// Имя сайта.
 Config::set('site_name', 'My Framework');
 
+// Языковые настройки.
 Config::set('languages', ['en', 'fr']);
 
-//Routes. Route name => method prefix
+// Роуты. Route name => method prefix
 Config::set('routes', [
     'default' => '',
     'admin' => 'admin_',
 ]);
 
+// Default настройки.
 Config::set('default_route', 'default');
 Config::set('default_language', 'en');
 Config::set('default_controller', 'pages');
 Config::set('default_action', 'index');
 
-// Настройки базы данных
+// Настройки БД.
 Config::set('db.host', 'localhost');
 Config::set('db.user', 'root');
 Config::set('db.password', '');
