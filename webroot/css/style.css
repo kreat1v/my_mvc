@@ -6,7 +6,9 @@ body {
     padding: 40px 15px;
 }
 
-form {
+form,
+.alert,
+.list-group {
     width: 400px;
     max-width: 400px;
 }

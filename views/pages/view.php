@@ -1,3 +1,3 @@
-This is the pages/view.php <br>
+<h1><?=$data['page']['title']?></h1>
 
-<?=$data['content']?>
+<?=$data['page']['content']?>

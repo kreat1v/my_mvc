@@ -86,8 +86,8 @@ class Router
         $this->route = Config::get('default_route'); // default
         $this->method_prefix = isset($routes[$this->route]) ? $routes[$this->route] : ''; // ''
         $this->language = Config::get('default_language'); // en
-        $this->controller = Config::get('default_controller'); //
-        $this->action = Config::get('default_action');
+        $this->controller = Config::get('default_controller'); // pages
+        $this->action = Config::get('default_action'); // index
 
         $uri_parts = explode('?', $this->uri);
 
