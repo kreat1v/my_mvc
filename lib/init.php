@@ -1,8 +1,10 @@
-<?php
+<?php // Файл инициализации настроек и классов.
 
+// Подключаем файл с основными конфигурациями.
 require_once(ROOT.DS.'config'.DS.'config.php');
 
 /**
+ * Функция автоподключения классов.
  * @param $class_name
  *
  * @throws Exception
@@ -23,6 +25,7 @@ function __autoload($class_name){
     }
 }
 
+// Функция для короткого вызова выбранного языка.
 function __($key, $default_value = '') {
 	return Lang::get($key, $default_value);
 }

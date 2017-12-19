@@ -1,17 +1,31 @@
-<?php
+<?php // Default контроллер - контроллер наших страниц.
 
 class PagesController extends Controller
 {
-	public function __construct( array $data = [] ) {
+	/**
+	 * PagesController constructor.
+	 * Передаём массив с данными.
+	 * Получаем экземпляр класса Page.
+	 *
+	 * @param array $data
+	 */
+	public function __construct(array $data = []) {
 		parent::__construct($data);
 		$this->model = new Page();
 	}
 
+	/**
+	 * Default метод.
+	 * Получаем список имеющихся страниц.
+	 */
 	public function index()
 	{
 		$this->data['pages'] = $this->model->getList();
 	}
 
+	/**
+	 *
+	 */
 	public function view() {
 		$params = App::getRouter()->getParams();
 

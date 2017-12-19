@@ -9,7 +9,7 @@ class ContactsController extends Controller
 	 *
 	 * @param array $data
 	 */
-	public function __construct( array $data = [] ) {
+	public function __construct(array $data = []) {
 		parent::__construct( $data );
 		$this->model = new Message();
 	}
